@@ -22,8 +22,8 @@ end
 
 AddEventHandler('onResourceStart', function(resource) if resource == GetCurrentResourceName() then playerLoaded() end end)
 AddEventHandler('onResourceStop', function(resource) if resource == GetCurrentResourceName() then playerUnload() end end)
-RegisterNetEvent('QBCore:Client:OnPlayerLoaded', playerLoaded())
-RegisterNetEvent('QBCore:Client:OnPlayerUnload', playerUnload())
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', playerLoaded)
+RegisterNetEvent('QBCore:Client:OnPlayerUnload', playerUnload)
 RegisterNetEvent('QBCore:Client:OnJobUpdate', function(job) PlayerJob = job end)
 RegisterNetEvent('QBCore:Client:OnGangUpdate', function(GangInfo) PlayerGang = GangInfo end)
 RegisterNetEvent('police:SetCopCount', function(amount) CurrentCops = amount end)
